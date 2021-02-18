@@ -110,3 +110,13 @@ d100.onclick = function () {
     var result = d100Dice.roll();
     printNumber(result);
 };
+//creating little function to highlight value of modifier to make it easier to change number
+function selectAll(id) {
+    var input = document.getElementById('plusAndMinus');
+    input.focus();
+    input.select();
+}
+//create a clear function
+function clearButton() {
+    
+}
