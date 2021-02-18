@@ -118,5 +118,6 @@ function selectAll(id) {
 }
 //create a clear function
 function clearButton() {
-    
+    var placeholder = document.getElementById('placeholder');
+    placeholder.innerHTML = "";
 }

@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+input, button, submit {
+    border: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(212, 212, 212);
+    height: 100%;
+    margin-bottom: 50px;
+}
+/* surrounds everything but the footer */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    header {
+        font-size: 55px;
+        margin: 20px 0;
+    }
+    
+    /*the header and output for the dice results */
+    .roll-output {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .roll-output h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+            opacity: 80%;
+        }
+        .placeholder-wrapper {
+            border: 1px solid black;
+            margin-bottom: 25px;
+            width: 75px;
+            text-align: center;
+        }
+            #placeholder {
+                font-size: 35px;
+                opacity: 80%;
+                margin: 10px 10px;    
+            }
+/* the modifier and dice buttons themselves */
+.dice-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+    .modifier {
+        margin-bottom: 10px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        #plusAndMinus {
+            height: 25px;
+            font-size: 17px;
+            text-align: right;
+            width: 50px;
+            margin-left: 15px;
+        }
+    .button-wrapper {
+        margin-bottom: 10px;
+    }
+        button {
+            width: 85px;
+            height: 55px;
+            font-size: 25px;
+            background-color: rgb(230, 224, 224);
+            opacity: 80%;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+            button:hover {
+                box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24);
+            }
+            button:active {
+                background-color: rgb(238, 238, 238);
+                transform: translateY(4px);
+            }
+footer {
+    border-top: 1px solid rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    height: 75px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+    #clear-button {
+        margin-top: 10px;
+        margin-right: 15px;
+        font-size: 16px;
+        height: 35px;
+        width: 85px;     
+    }

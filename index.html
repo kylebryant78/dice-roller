@@ -3,44 +3,45 @@
     <head lang="en">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <title>Dice Roller</title>
     </head>
     <body>
-        <header>
-            <h1>Dice Roller</h1>
-        </header>
+        <div class="container">
+            <header>
+                <h1>Dice Roller</h1>
+                
+            </header>
 
-        <section class="roll-output">
-            <p id="placeholder">Placeholder Output</p>
-        </section>
+            <section class="roll-output">
+                <h2>Dice Result</h2>
+                <div class="placeholder-wrapper">
+                    <p id="placeholder">20</p>
+                </div>
+            </section>
 
-        <section class="dice-buttons">
-            <div class="modifier">
-                <label>Modifier</label>
-                <input type="number" id="plusAndMinus" min="-10" max="20" placeholder="0" value="0">
-            </div>
-            <button id="d4">
-                d4
-            </button>
-            <button id="d6">
-                d6
-            </button>
-            <button id="d8">
-                d8
-            </button>
-            <button id="d10">
-                d10
-            </button>
-            <button id="d12">
-                d12
-            </button>
-            <button id="d20">
-                d20
-            </button>
-            <button id="d100">
-                d100
-            </button>
-        </section>
-
+            <section class="dice-buttons">
+                <div class="modifier">
+                    <label id="label">Modifier:</label>
+                    <input type="number" id="plusAndMinus" min="-10" max="20" placeholder="0" value="0" onclick="selectAll(this.id);">
+                </div>
+                <div class="button-wrapper">
+                    <button id="d4"> d4 </button>
+                    <button id="d6"> d6 </button>
+                </div>    
+                <div class="button-wrapper">
+                    <button id="d8"> d8 </button>
+                    <button id="d10"> d10 </button>
+                </div>
+                <div class="button-wrapper">
+                    <button id="d12"> d12 </button>
+                    <button id="d20"> d20 </button>
+                </div>
+                    <button id="d100"> d100 </button>
+            </section>
+        </div>
+        <footer>
+            <button id="clear-button" onclick="clearButton();">Clear Result</button>
+        </footer>
 
         <script src="scripts.js"></script>
     </body>
